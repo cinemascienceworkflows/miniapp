@@ -28,6 +28,7 @@ fi
 cp run/submit.sh $PANTHEON_RUN_DIR
 # copy new actions file
 cp inputs/ascent/ascent_actions.yaml $PANTHEON_RUN_DIR
+cp inputs/ascent/clover.in $PANTHEON_RUN_DIR
 
 # END: EDIT THIS SECTION
 # --------------------------------------------------------------------
@@ -46,4 +47,6 @@ rm -f ascent_actions.json
 echo "----------------------------------------------------------------------"
 echo "PTN: submitting run ..." 
 echo "----------------------------------------------------------------------"
-bsub submit.sh
+# MODIFICATION FOR EAGLE, NO JOB SUBMISSION
+#bsub submit.sh
+bash submit.sh

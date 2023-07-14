@@ -17,8 +17,7 @@ INSTALL_ASCENT=true
 INSTALL_APP=false
 
 # spack data
-SPACK_COMPILER_MODULE=gcc/9.3.0
-# SPACK_COMPILER_MODULE=gcc/10.2.0
+SPACK_COMPILER_MODULE=gcc/7.3
 SPACK_COMMIT=285548588f533338cc5493a7ba492f107e714794
 SPACK_NAME=e4s_pantheon
 SPACK_CACHE_URL=https://cache.e4s.io/pantheon
@@ -44,10 +43,10 @@ if $BUILD_CLEAN; then
         rm -rf $PANTHEON_WORKFLOW_DIR
     fi
     if [ ! -d $PANTHEON_PATH ]; then
-        mkdir $PANTHEON_PATH
+        mkdir -p $PANTHEON_PATH
     fi
     if [ ! -d $PANTHEON_PROJECT_DIR ]; then
-        mkdir $PANTHEON_PROJECT_DIR
+        mkdir -p $PANTHEON_PROJECT_DIR
     fi
     mkdir -p $PANTHEON_WORKFLOW_DIR
     mkdir $PANTHEON_DATA_DIR
