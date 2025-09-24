@@ -1,4 +1,4 @@
-![release](https://pantheonscience.github.io/states/release.png)
+![archive](https://pantheonscience.github.io/states/archive.png)
 
 # Pantheon/E4S/Ascent in-situ miniapp example workflow
 
